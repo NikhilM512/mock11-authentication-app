@@ -25,7 +25,7 @@ app.use(authenticationMiddleware);
 
 app.use("/profile",profileRouter)
 
-app.listen(PORT,async()=>{
+app.listen(PORT, async()=>{
     try {
         await connection;
         console.log("Conneted to DB")
